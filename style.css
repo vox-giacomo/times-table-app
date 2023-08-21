@@ -1,0 +1,102 @@
+h1 { /* Question header */
+    font-family: Arial;
+    font-weight:700;
+    color:#3285a8; /* Soft Blue */
+}
+
+p {
+    font-family: Arial;
+    font-weight:400;
+    color:black;
+}
+
+#mistakes {
+    font-family: Arial;
+    font-weight:600;
+    font-size: 24px;
+    color:red;
+}
+
+#correctAnswer {
+    font-family: Arial;
+    font-weight:600;
+    font-size: 24px;
+    color:green;
+}
+
+.game {
+    width: 620px;
+    height: 620px;
+}
+
+.top-row {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr); /* the flex-grid format enables the squares to be distributed in a 13x13 grid */
+    background: #48cf6c; /* Soft Green */
+}
+
+.bottom-row {
+    display: grid;
+    grid-template-columns: 1fr 12fr;
+    background: #ffffff; /* White */
+}
+
+.side-row {
+    display: grid;
+    grid-template-columns: 12;
+    background: #48cf6c;
+}
+  
+.main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); 
+    background: #48cf6c;
+}
+  
+.square {
+    padding: 2px;
+    border: 1px solid #48cf6c;
+    border-radius: 1px;
+    margin: 0px;
+    height: 40px;
+    width: 40px;
+    background: #48cf6c;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.square > p {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight:700;
+}
+
+.square button {
+    background: #ffffff;
+    border-radius: 4px;
+    font-size: 24px;
+}
+
+.square button:hover {
+    transform: scale(1.3);
+    background-color: #3285a8;
+    color: white;
+}
+
+#resetButton {
+    padding: 1px;
+    background: #ffffff;
+    font-size: 25px;
+    color: #3285a8;
+    border-radius: 4px;
+}
+
+#resetButton:hover {
+    background-color: #3285a8; /* Soft Blue */
+    color: white;
+}
+
+.hidden {
+    visibility: hidden;
+}
